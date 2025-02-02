@@ -1,0 +1,78 @@
+:root {
+    font-size: calc(15px + 0.390625vw);
+}
+*,*::after,*::before {
+    font-family: "Funnel Sans", serif;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.container {
+    max-width: 768px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 5rem;
+}
+button {
+    font-size: 0.75rem;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+}
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+.subhead {
+    font-size: 0.8rem;
+    text-align: center;
+    color: gray;
+}
+.date {
+    color: gray;
+}
+.logs-container {
+    margin: 3rem 0 3rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.log {
+    display: flex;
+    gap: 1rem;
+    justify-content: start;
+}
+.date {
+    min-width: 150px;
+    max-width: 150px;
+    text-align: end;
+}
+.info {
+    overflow-wrap: break-word;
+    min-width: 0;
+    flex: 1;
+}
+.dot {
+    height: 1rem;
+    background: black;
+    min-width: 1rem;
+    border-radius: 50px;
+}
+.dot::before {
+    content: "";
+    width:1px;
+    height: 5rem;
+    display: block;
+    background: black;
+    position: relative;
+    left:0.45rem;
+    top:-2rem;
+}

@@ -1,0 +1,79 @@
+body {
+    font-family: "Funnel Sans", serif;
+    color: #f8f8f2;
+}
+.container {
+    width: 150px;
+    height: 200px;
+    background-color: #282a36;
+    position:absolute;
+    bottom: 5%;
+    right: 5%;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.bx {
+    font-size: 3rem;
+    width: fit-content;
+}
+.bxs-x-circle {
+    font-size: 1.3rem;
+    position: absolute;
+    right: 10%;
+}
+.bxs-x-circle:hover {
+    transition-duration: 0.25s;
+    color: 	#ff79c6;
+    cursor: pointer;
+}
+.cookie-container {
+    width: fit-content;
+}
+.static-cookie {
+    visibility: visible;
+}
+.animated-cookie {
+    position: absolute;
+    left: 20px;
+    visibility: hidden;
+}
+.cookie-container:hover .animated-cookie {
+    visibility: visible;
+    color: #8be9fd;
+}
+.cookie-container:hover .static-cookie {
+    visibility: hidden;
+}
+p {
+    margin-top: 20%;
+}
+button {
+    font-family: "Funnel Sans", serif;
+    font-size: 1.05rem;
+    font-weight: 450;
+    width: 100%;
+    padding: 10px 24px;
+    border-radius: 13px;
+    outline: none;
+    border: none;
+    margin: auto;
+}
+button:hover {
+    background-color: #50fa7b;
+    transition-duration: 0.25s;
+    cursor: pointer;
+}
+.hide {
+    opacity: 0;
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    transition-duration: 0.5s;
+}

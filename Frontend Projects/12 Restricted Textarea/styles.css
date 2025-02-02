@@ -1,0 +1,52 @@
+* {
+    font-family: "Funnel Sans", serif;
+}
+body {
+    color: #f8f8f2;
+    background-color: #282a36;
+}
+.container {
+    background-color: #44475a;
+    width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px #181920;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10vh;
+    left: calc(50vw - 300px);
+}
+
+textarea {
+    height: 500px;
+    padding: 50px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    transition-duration: 0.25s;
+    resize: none;
+    font-size: 0.93rem;
+    background-color: #282a36;
+    color: #f8f8f2;
+    outline: none;
+}
+p {
+    font-size: 1.5rem;
+}
+.word-counter {
+    padding: 10px;
+    width: 90px;
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    transition-duration: 0.25s;
+}
+.input:focus{
+    border: 3px solid #f8f8f2;
+}
+.exeed {
+    border: 3px solid #ff5555 !important;
+}
+.red {
+    color: #ff5555;
+}

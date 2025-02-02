@@ -1,0 +1,135 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    font-family: "Funnel Sans", serif;
+    flex-direction: column;
+    width: 800px;
+    margin:auto;
+    gap: 20px;
+    transform: scale(0.7);
+}
+section {
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+.speaker img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+}
+.quote {
+    color: white;
+    background-color: #1E1E1E;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+}
+.font125{
+    font-size: 1.1rem;
+}
+.quote::after {
+    display: block;
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #1E1E1E;
+    position: relative;
+    top:30px;
+    left:16px;
+}
+.box {
+    flex:1;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box .speaker img , .box .speaker{
+    padding:0;
+}
+.speaker {
+    display: flex;
+    padding: 20px;
+    gap: 20px;;
+    align-items: center;
+}
+.speaker-info p:first-child {
+    font-size: 1.5rem;
+}
+.big-pic{
+    width: 280px;
+    border-radius: 20px;
+}
+.review {
+    flex: 1;
+    background-color: #1E1E1E;
+    border-radius: 20px;
+    padding: 40px;
+}
+.star-container {
+    display: flex;
+}
+.star-container i {
+    color: #F1C102;
+    font-size: 2rem;
+}
+.review p {
+    color: white;
+}
+.review p:nth-child(2) {
+    font-size: 2rem;
+    margin: 1rem 0 0.5rem 0;
+}
+.review p:nth-child(3) {
+    color: gray;
+    margin-bottom: 1rem;
+}
+.box-big {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.box-big p {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+}
+.photo-container {
+    display: flex;
+    width: 50%;
+    gap: 20px;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: center;
+}
+.photo-container img {
+    width: 60px;
+    border-radius: 50px;
+}
+.photo-container i {
+    font-size: 2rem;
+}
+.unselected {
+    opacity: 0.35;
+    transform: scale(0.8);
+}
+.box-big p:last-child {
+   margin-top: -10px; 
+}
