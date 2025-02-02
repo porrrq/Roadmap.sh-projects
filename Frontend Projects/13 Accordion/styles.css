@@ -1,0 +1,82 @@
+:root {
+    font-size: 18px;
+    /* Background and Foreground */
+    --bg: #282828; /* Main background */
+    --bg-soft: #3c3836; /* Softer background for panels, cards */
+    --fg: #ebdbb2; /* Main foreground text */
+    --fg-muted: #a89984; /* Muted text, secondary information */
+  
+    /* Primary Colors */
+    --red: #cc241d; /* Error, destructive actions */
+    --green: #98971a; /* Success, confirmations */
+    --yellow: #d79921; /* Warnings, caution */
+    --blue: #458588; /* Links, primary highlights */
+    --purple: #b16286; /* Special highlights, secondary attention */
+    --aqua: #689d6a; /* Alerts, notifications */
+    --orange: #d65d0e; /* Emphasis, active elements */
+  
+    /* Bright Variants (for hover, active states) */
+    --red-bright: #fb4934;
+    --green-bright: #b8bb26;
+    --yellow-bright: #fabd2f;
+    --blue-bright: #83a598;
+    --purple-bright: #d3869b;
+    --aqua-bright: #8ec07c;
+    --orange-bright: #fe8019;
+  
+    /* Borders and UI Elements */
+    --border: #504945; /* Default border color */
+    --border-light: #665c54; /* Subtle dividers */
+    --shadow: rgba(0, 0, 0, 0.5); /* Shadow effect */
+
+    /* Accent & Misc */
+    --accent: var(--blue); /* General accent color */
+    --accent-hover: var(--blue-bright);
+    --selection-bg: #504945; /* Text selection background */
+    --selection-fg: var(--fg);
+}
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 40px;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Funnel Sans", serif;
+}
+.container {
+    width: 70%;
+    margin: auto;
+}
+h1 {
+    font-size: 3rem;
+    color: var(--green)
+}
+p {
+    color: var(--fg-muted);
+}
+.question-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 2rem;
+}
+.question {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: var(--bg-soft);
+    color: var(--yellow);
+}
+bx {
+    text-align: end;
+}
+
+.answer {
+    padding: 0 30px;
+}
+.hide {
+    display: none
+}
