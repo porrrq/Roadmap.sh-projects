@@ -1,0 +1,243 @@
+:root {
+  font-size: calc(15px + 0.390625vw);
+  /* Dracula Color Scheme */
+  --dracula-background: #282a36; /* Background color */
+  --dracula-current-line: #44475a; /* Current line color */
+  --dracula-selection: #44475a; /* Selection color */
+  --dracula-foreground: #f8f8f2; /* Foreground (text) color */
+  --dracula-comment: #6272a4; /* Comment color */
+  --dracula-cyan: #8be9fd; /* Cyan */
+  --dracula-green: #50fa7b; /* Green */
+  --dracula-orange: #ffb86c; /* Orange */
+  --dracula-pink: #ff79c6; /* Pink */
+  --dracula-purple: #bd93f9; /* Purple */
+  --dracula-red: #ff5555; /* Red */
+  --dracula-yellow: #f1fa8c; /* Yellow */
+}
+* {
+  box-sizing: border-box;
+}
+.bxs-dog {
+  font-size: 3rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body {
+  background-color: var(--dracula-background);
+  color: var(--dracula-foreground);
+  padding: 40px;
+  font-family: "Funnel Sans", serif;
+}
+.link-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  min-width: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  display: block;
+  background: var(--dracula-current-line);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: var(--dracula-foreground);
+  text-decoration: none;
+  width: calc(130px +  0.390625vw);
+  text-align: center;
+}
+a:hover {
+  background-color: #3b3e52;
+  transition-duration: 0.25s;
+}
+a:active {
+  transition-duration: 0.25s;
+  background-color: #26272e;
+  color: var(--dracula-foreground);
+}
+.page-title {
+  font-size: 5rem;
+  color: var(--dracula-purple);
+}
+.page-description {
+  width: 70%;
+  margin: auto;
+  margin-top: -4rem;
+  font-style: italic;
+  color: var(--dracula-comment);
+}
+h2 {
+  width: 90%;
+  margin: auto;
+  padding: 1rem 0;
+}
+.highlight {
+  font-weight: bold;
+  color: var(--dracula-cyan)
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: 40px;
+  width: 80%;
+  margin: auto;
+  justify-items: center;
+}
+.card {
+  background-color: var(--dracula-foreground);
+  width: 300px;
+  aspect-ratio: 3/4;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  margin: 0 auto;
+  height: 40%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.card-title {
+  color: var(--dracula-background);
+}
+.card-details {
+  font-size: 0.8rem;
+  color: var(--dracula-comment);
+}
+.card:hover {
+  transform: scale(1.1);
+  transition-duration: 0.25s;
+  cursor: pointer;
+}
+.projects-container {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.project {
+  background: var(--dracula-current-line);
+  border-radius: 20px;
+  padding: 20px;
+}
+.project:hover {
+  transition-duration: 0.25s;
+  background-color: #6272a4;
+  cursor: pointer;
+}
+.project-name {
+  margin:0;
+}
+.form-container form {
+  margin-top: 3rem !important;
+  background-color: var(--dracula-current-line);
+  border-radius: 20px;
+  padding: 20px;
+  margin: auto;
+  min-width: 250px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-bottom: 1rem;
+}
+input {
+  width: 100%;
+  height: 2rem;
+}
+textarea {
+  padding: 20px;
+  resize: none;
+  width: 100%;
+  height: 10rem;
+  display: block;
+}
+input,
+textarea {
+  font-family: "Funnel Sans", serif;
+  background: var(--dracula-background);
+  color: var(--dracula-foreground);
+  border-radius: 11px;
+  border: none;
+  outline: none;
+  margin: auto;
+  padding: 20px;
+}
+
+input:focus-within,
+textarea:focus-within {
+  border: 2px solid ;
+}
+button {
+  margin: auto;
+  background-color: var(--dracula-green);
+  color: var(--dracula-background);
+  font-family: "Funnel Sans", serif;
+  font-size: bold;
+  border-radius: 7px;
+  border: none;
+  width: 103px;
+  height: 2rem;
+}
+button:hover {
+  background-color: #45ce67;
+  transition-duration: 0.25s;
+}
+button:active {
+  background-color: #308a47;
+}
+
+@media only screen and (max-width: 768px) {
+  .bxs-dog {
+    font-size: 5rem;
+  }
+  nav {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+  }
+  .link-container * {
+    width: 100%;
+  }
+  .logo-container {
+    text-align: center;
+  }
+  nav::after {
+    margin-top: 2rem;
+    content: "";
+    display: block;
+    width: 80vw;
+    height: 1px;
+    background-color: var(--dracula-foreground);
+  }
+  nav::after {
+    margin: 0;
+  }
+  .page-title {
+    font-size: 4rem;
+  }
+  .page-description {
+    margin-top: -2.5rem;
+  }
+  
+}
